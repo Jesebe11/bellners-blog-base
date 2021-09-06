@@ -141,7 +141,6 @@ add_action( 'widgets_init', 'bellners_blog_base_widgets_init' );
  */
 function bellners_blog_base_scripts() {
 	wp_enqueue_style( 'bellners-blog-base-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0' );
-	wp_style_add_data( 'bellners-blog-base-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'bellners-blog-base-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
